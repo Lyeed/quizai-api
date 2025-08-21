@@ -42,7 +42,10 @@ app.post("/quiz", async (req, res) => {
     {
       "question": "string",
       "responses": ["string","string","string","string"],
-      "answer": 0
+      "answer": {
+        "index": 0,
+        "description": "string"
+      }
     }
   ]
 }
@@ -51,7 +54,7 @@ Rules:
 - topic = concise theme from input.
 - questions = exactly 10.
 - each has 4 responses, 1 correct.
-- answer = 0-based index of correct response.
+- answer = 0-based index of correct response and a description on why this is the answer
 - Output only valid JSON, nothing else.
 
 Difficulty levels:
