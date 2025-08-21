@@ -54,6 +54,12 @@ Rules:
 - answer = 0-based index of correct response.
 - Output only valid JSON, nothing else.
 
+Difficulty levels:
+- Easy → basic, obvious facts, everyone knows.
+- Medium → common knowledge, but not obvious.
+- Hard → advanced details, less familiar.
+- Very hard → expert-only, highly specific, very difficult.
+
 Quiz difficulty: "{{${difficulty}}}"
 User topic: "{{${prompt}}}"`,
                             },
